@@ -33,7 +33,7 @@ collections:
         }
       - { label: "Media", name: "media", widget: "string" }
       - { label: "Specialty", name: "specialty", widget: "string" }
-      - { label: "Email", name: "email", widget: "string" }
+      - { label: "Email", name: "email", widget: "string", required: false }
       - { label: "Artist Image", name: "artistimage", widget: image }
       - { label: "Description", name: "description", widget: "markdown" }
 
