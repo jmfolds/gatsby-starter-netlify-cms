@@ -13,23 +13,19 @@ class ArtistRollTemplate extends React.Component {
         {posts &&
           posts.map(({ node: post }) => (
             <div className="is-parent column is-6" key={post.id}>
-              <article
-                className={`blog-list-item tile is-child box notification ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
-              >
+              <article>
                 <header>
-                  {post.frontmatter.featuredimage ? (
+                  {post.frontmatter.artistimage ? (
                     <div className="featured-thumbnail">
                       <PreviewCompatibleImage
                         imageInfo={{
-                          image: post.frontmatter.featuredimage,
+                          image: post.frontmatter.artistimage,
                           alt: `featured image thumbnail for post ${post.frontmatter.title}`,
                           width:
-                            post.frontmatter.featuredimage.childImageSharp
+                            post.frontmatter.artistimage.childImageSharp
                               .gatsbyImageData.width,
                           height:
-                            post.frontmatter.featuredimage.childImageSharp
+                            post.frontmatter.artistimage.childImageSharp
                               .gatsbyImageData.height,
                         }}
                       />
@@ -76,7 +72,7 @@ export default function ArtistRoll() {
                   name
                   templateKey
                   description
-                  featuredimage {
+                  artistimage {
                     childImageSharp {
                       gatsbyImageData(
                         width: 120

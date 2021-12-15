@@ -5,14 +5,21 @@ import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 // eslint-disable-next-line
 export const ArtistPostTemplate = ({
   content,
   contentComponent,
+  image,
   description,
-  tags,
-  title,
+  acceptsCommissions,
+  media,
+  specialty,
+  email,
+  // tags,
+  location,
+  name,
   helmet,
 }) => {
   const PostContent = contentComponent || Content;
@@ -24,11 +31,34 @@ export const ArtistPostTemplate = ({
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
+              {name}
             </h1>
+            {image ? (
+                <div className="featured-thumbnail">
+                  <PreviewCompatibleImage
+                    imageInfo={{
+                      image: image,
+                      alt: `image thumbnail for artist ${name}`,
+                      width:
+                        image.childImageSharp
+                          .gatsbyImageData.width,
+                      height:
+                        image.childImageSharp
+                          .gatsbyImageData.height,
+                    }}
+                  />
+                </div>
+              ) : null}
+            <p>{location}</p>
             <p>{description}</p>
+            <p><a href={`mailto:${email}`}>{email}</a></p>
+            <ul style={{ listStyle: 'none'}}>
+              <li>Accepts Commissions: {acceptsCommissions}</li>
+              <li>Media: {media}</li>
+              <li>Specialty: {specialty}</li>
+            </ul>
             <PostContent content={content} />
-            {tags && tags.length ? (
+            {/* {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
                 <ul className="taglist">
@@ -39,7 +69,7 @@ export const ArtistPostTemplate = ({
                   ))}
                 </ul>
               </div>
-            ) : null}
+            ) : null} */}
           </div>
         </div>
       </div>
@@ -64,9 +94,16 @@ const ArtistPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
+        email={post.frontmatter.email}
+        acceptsCommissions={post.frontmatter.acceptsCommissions}
+        media={post.frontmatter.media}
+        specialty={post.frontmatter.specialty}
+        image={post.frontmatter.artistimage}
+        name={post.frontmatter.name}
+        location={post.frontmatter.location}
         helmet={
-          <Helmet titleTemplate="%s | Blog">
-            <title>{`${post.frontmatter.title}`}</title>
+          <Helmet titleTemplate="Artist | %s">
+            <title>{`${post.frontmatter.name}`}</title>
             <meta
               name="description"
               content={`${post.frontmatter.description}`}
@@ -74,7 +111,6 @@ const ArtistPost = ({ data }) => {
           </Helmet>
         }
         tags={post.frontmatter.tags}
-        title={post.frontmatter.title}
       />
     </Layout>
   );
@@ -96,6 +132,21 @@ export const pageQuery = graphql`
       frontmatter {
         name
         description
+        email
+        location
+        acceptsCommissions
+        media
+        specialty
+        artistimage {
+          childImageSharp {
+            gatsbyImageData(
+              width: 120
+              quality: 100
+              layout: CONSTRAINED
+            )
+
+          }
+        }
         tags
       }
     }
