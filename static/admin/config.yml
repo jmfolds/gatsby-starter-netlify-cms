@@ -16,6 +16,7 @@ collections:
   - name: "artists"
     label: "Artists"
     folder: "src/pages/artists"
+    slug: "{{name}}"
     create: true
     fields:
       - {
@@ -25,17 +26,38 @@ collections:
           default: "artist-page"
         }
       - { label: "Name", name: "name", widget: "string" }
-      - { label: "Location", name: "location", widget: "string" }
+      - {
+          label: "Location",
+          name: "location",
+          widget: "string",
+          required: false
+        }
       - {
           label: "Accepts Commissions",
           name: "acceptsCommissions",
-          widget: "string"
+          widget: "string",
+          required: false
         }
-      - { label: "Media", name: "media", widget: "string" }
-      - { label: "Specialty", name: "specialty", widget: "string" }
+      - { label: "Media", name: "media", widget: "string", required: false }
+      - {
+          label: "Specialty",
+          name: "specialty",
+          widget: "string",
+          required: false
+        }
       - { label: "Email", name: "email", widget: "string", required: false }
-      - { label: "Artist Image", name: "artistimage", widget: image }
-      - { label: "Description", name: "description", widget: "markdown" }
+      - {
+          label: "Artist Image",
+          name: "artistimage",
+          widget: image,
+          required: false
+        }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "markdown",
+          required: false
+        }
 
   - name: "blog"
     label: "Blog"
