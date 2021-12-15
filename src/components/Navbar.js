@@ -67,7 +67,7 @@ export default function Navbar() {
       query={graphql`
         query NavbarArtistRollQuery {
           allMarkdownRemark(
-            filter: { frontmatter: { templateKey: { eq: "artist-post" } } }
+            filter: { frontmatter: { templateKey: { eq: "artist-page" } } }
           ) {
             edges {
               node {

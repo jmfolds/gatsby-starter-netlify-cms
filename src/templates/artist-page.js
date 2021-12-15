@@ -16,7 +16,7 @@ export const ArtistPostTemplate = ({
   acceptsCommissions,
   media,
   specialty,
-  email,
+  contact,
   // tags,
   location,
   name,
@@ -30,9 +30,9 @@ export const ArtistPostTemplate = ({
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+            <h2 className="title is-size-2 has-text-weight-bold is-bold-light">
               {name}
-            </h1>
+            </h2>
             {image ? (
                 <div className="featured-thumbnail">
                   <PreviewCompatibleImage
@@ -51,7 +51,15 @@ export const ArtistPostTemplate = ({
               ) : null}
             <p>{location}</p>
             <p>{description}</p>
-            <p><a href={`mailto:${email}`}>{email}</a></p>
+            {contact.email && 
+              <p><a href={`mailto:${contact.email}`}>{contact.email}</a></p>
+            }
+            {contact.telephone && 
+              <p>Tel: <a href={`tel:${contact.telephone}`}>{contact.telephone}</a></p>
+            }
+            {contact.telephone2 && 
+              <p>Tel: <a href={`tel:${contact.telephone2}`}>{contact.telephone2}</a></p>
+            }
             <ul style={{ listStyle: 'none'}}>
               <li>Accepts Commissions: {acceptsCommissions}</li>
               <li>Media: {media}</li>
@@ -94,7 +102,7 @@ const ArtistPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
-        email={post.frontmatter.email}
+        contact={post.frontmatter.contact}
         acceptsCommissions={post.frontmatter.acceptsCommissions}
         media={post.frontmatter.media}
         specialty={post.frontmatter.specialty}
@@ -132,7 +140,11 @@ export const pageQuery = graphql`
       frontmatter {
         name
         description
-        email
+        contact {
+          email
+          telephone
+          telephone2
+        }
         location
         acceptsCommissions
         media

@@ -1,5 +1,5 @@
 ---
-templateKey: artist-post
+templateKey: artist-page
 name: Bob Cain
 location: Wichita, KS
 artistimage: /img/test.png

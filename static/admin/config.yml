@@ -17,6 +17,7 @@ collections:
     label: "Artists"
     folder: "src/pages/artists"
     slug: "{{name}}"
+    identifier_field: name
     create: true
     fields:
       - {

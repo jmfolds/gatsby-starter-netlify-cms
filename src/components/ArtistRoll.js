@@ -59,7 +59,7 @@ export default function ArtistRoll() {
       query={graphql`
         query ArtistRollQuery {
           allMarkdownRemark(
-            filter: { frontmatter: { templateKey: { eq: "artist-post" } } }
+            filter: { frontmatter: { templateKey: { eq: "artist-page" } } }
           ) {
             edges {
               node {
