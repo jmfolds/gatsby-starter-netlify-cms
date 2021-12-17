@@ -5,7 +5,7 @@ location: Wichita, KS
 acceptsCommissions: Yes
 media: Terra-cotta, Bronze
 specialty: Bas Relief, Figures, Abstracts
-artistimage: https://web.archive.org/web/20210421181957im_/http://wichitasculptorsguild.com/communities/7/004/009/538/157//images/4565437566.jpg
+artistimage: /img/4565437566.jpg
 description: >-
   Although primarily self-taught, I have spent many hours of study with
   well-known artists and continually strive to develop my own talent and skill
