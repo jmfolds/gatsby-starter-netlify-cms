@@ -17,11 +17,11 @@ const NavbarTemplate = class extends React.Component {
     const { edges: posts } = data.allMarkdownRemark;
     return (
       <div className="d-flex flex-column">
-        <img src="../img/wsg-logo.jpg" />
+        <img src="/img/wsg-logo.jpg" />
         <Nav defaultActiveKey="/home" className="flex-column">
-          <Nav.Link href="/home">Active</Nav.Link>
-          <Nav.Link eventKey="link-1">Link</Nav.Link>
-          <Nav.Link eventKey="link-2">Link</Nav.Link>
+          <Nav.Link as={Link} to="/">Home</Nav.Link>
+          <Nav.Link as={Link} to="/about">About</Nav.Link>
+          <Nav.Link as={Link} to="/resources">Resources</Nav.Link>
           <NavDropdown title="Artists" id="nav-dropdown">
           {posts &&
                 posts.map(({ node: post }) => {
