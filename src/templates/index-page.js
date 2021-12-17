@@ -12,7 +12,7 @@ import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
   image,
-  // title,
+  title,
   // heading,
   // subheading,
   // mainpitch,
@@ -23,7 +23,7 @@ export const IndexPageTemplate = ({
   return (
     <div>
       <section className="container">
-        <h1>Wichita Sculptors Guild, Inc</h1>
+        <h1>{title}</h1>
         <PreviewCompatibleImage imageInfo={image} imageStyles={{ width: '345px', margin: '0 auto' }}/>
       </section>
     </div>
@@ -35,11 +35,7 @@ IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
   description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
 };
 
 const IndexPage = ({ data }) => {
@@ -52,9 +48,7 @@ const IndexPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
-        intro={frontmatter.intro}
       />
     </Layout>
   );
@@ -82,23 +76,7 @@ export const pageQuery = graphql`
         }
         heading
         subheading
-        mainpitch {
-          title
-          description
-        }
         description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
-              }
-            }
-            text
-          }
-          heading
-          description
-        }
       }
     }
   }

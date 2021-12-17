@@ -2,6 +2,7 @@ import * as React from "react";
 import { Helmet } from "react-helmet";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./all.scss";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
@@ -53,8 +54,10 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix("/")}img/og-image.jpg`}
         />
       </Helmet>
-      <Navbar />
-      <div>{children}</div>
+      <div className="d-flex">
+        <Navbar />
+        <div>{children}</div>
+      </div>
       <Footer />
     </div>
   );

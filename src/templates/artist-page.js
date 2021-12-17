@@ -16,7 +16,8 @@ export const ArtistPostTemplate = ({
   acceptsCommissions,
   media,
   specialty,
-  contact,
+  // contact,
+  email,
   // tags,
   location,
   name,
@@ -51,15 +52,15 @@ export const ArtistPostTemplate = ({
               ) : null}
             <p>{location}</p>
             <p>{description}</p>
-            {contact.email && 
-              <p><a href={`mailto:${contact.email}`}>{contact.email}</a></p>
+            {email && 
+              <p><a href={`mailto:${email}`}>{email}</a></p>
             }
-            {contact.telephone && 
+            {/* {contact.telephone && 
               <p>Tel: <a href={`tel:${contact.telephone}`}>{contact.telephone}</a></p>
             }
             {contact.telephone2 && 
               <p>Tel: <a href={`tel:${contact.telephone2}`}>{contact.telephone2}</a></p>
-            }
+            } */}
             <ul style={{ listStyle: 'none'}}>
               <li>Accepts Commissions: {acceptsCommissions}</li>
               <li>Media: {media}</li>
@@ -102,7 +103,7 @@ const ArtistPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
-        contact={post.frontmatter.contact}
+        email={post.frontmatter.email}
         acceptsCommissions={post.frontmatter.acceptsCommissions}
         media={post.frontmatter.media}
         specialty={post.frontmatter.specialty}
@@ -140,11 +141,7 @@ export const pageQuery = graphql`
       frontmatter {
         name
         description
-        contact {
-          email
-          telephone
-          telephone2
-        }
+        email
         location
         acceptsCommissions
         media
