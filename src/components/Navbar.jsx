@@ -38,6 +38,7 @@ export default function Navbar() {
         query NavbarArtistRollQuery {
           allMarkdownRemark(
             filter: { frontmatter: { templateKey: { eq: "artist-page" } } }
+            sort: { fields: [frontmatter___name], order: ASC }
           ) {
 
             edges {
