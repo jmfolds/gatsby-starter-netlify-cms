@@ -21,6 +21,7 @@ const TemplateWrapper = ({ children }) => {
           href="https://fonts.googleapis.com/css2?family=Playball&display=swap"
           rel="stylesheet"
         />
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet" /> 
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -56,7 +57,7 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <div className="d-flex">
         <Navbar />
-        <div>{children}</div>
+        <div className="d-flex flex-grow-1">{children}</div>
       </div>
       <Footer />
     </div>

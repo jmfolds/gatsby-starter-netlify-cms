@@ -21,7 +21,7 @@ export const IndexPageTemplate = ({
 }) => {
   console.log(image);
   return (
-    <div>
+    <div className="d-flex flex-grow-1">
       <section className="container">
         <h1>{title}</h1>
         <PreviewCompatibleImage imageInfo={image} imageStyles={{ width: '345px', margin: '0 auto' }}/>

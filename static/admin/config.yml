@@ -94,11 +94,20 @@ collections:
               default: "index-page"
             }
           - { label: Title, name: title, widget: string }
-          - { label: Logo, name: logo, widget: image }
-          - { label: Image, name: image, widget: image }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Subheading, name: subheading, widget: string }
-          - { label: Description, name: description, widget: string }
+          - { label: Image, name: image, widget: image, required: false }
+          - { label: Heading, name: heading, widget: string, required: false }
+          - {
+              label: Subheading,
+              name: subheading,
+              widget: string,
+              required: false
+            }
+          - {
+              label: Description,
+              name: description,
+              widget: string,
+              required: false
+            }
 
       - file: "src/pages/about/index.md"
         label: "About"
