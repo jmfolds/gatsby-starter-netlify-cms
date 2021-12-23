@@ -5,7 +5,7 @@ location: Wichita, KS
 acceptsCommissions: Yes
 media: Terra-cotta, Bronze
 specialty: Bas Relief, Figures, Abstracts
-artistimage: /img/apple-touch-icon.png
+artistimage: /img/4565437566.jpg
 description: >-
   Although primarily self-taught, I have spent many hours of study with
   well-known artists and continually strive to develop my own talent and skill
