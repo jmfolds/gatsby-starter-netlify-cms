@@ -5,8 +5,11 @@ location: Wichita, KS
 media: Wood, Stone, Clay, Bronze
 artistimage: /img/test.png
 galleryImages:
-  - /img/apple-touch-icon.png
-  - /img/tutorials.png
+  - /img/bob1.jpg
+  - /img/bob2.jpg
+  - /img/bob3.jpg
+  - /img/bob4.jpg
+  - /img/bob5.jpg
 tags:
   - wood
   - stone
