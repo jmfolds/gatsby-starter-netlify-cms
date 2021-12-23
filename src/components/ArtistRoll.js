@@ -79,7 +79,15 @@ export default function ArtistRoll() {
                         quality: 100
                         layout: CONSTRAINED
                       )
-
+                    }
+                  }
+                  galleryImages {
+                    childImageSharp {
+                      gatsbyImageData(
+                        width: 120
+                        quality: 100
+                        layout: CONSTRAINED
+                      )
                     }
                   }
                 }

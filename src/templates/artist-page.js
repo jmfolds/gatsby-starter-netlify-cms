@@ -12,6 +12,7 @@ export const ArtistPostTemplate = ({
   content,
   contentComponent,
   image,
+  gallery,
   description,
   acceptsCommissions,
   media,
@@ -24,62 +25,78 @@ export const ArtistPostTemplate = ({
   helmet,
 }) => {
   const PostContent = contentComponent || Content;
-
+  console.log(gallery)
   return (
-    <section className="section">
+    <section className="container-fluid">
       {helmet || ""}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h2 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {name}
-            </h2>
-            {image ? (
-                <div className="featured-thumbnail">
-                  <PreviewCompatibleImage
-                    imageInfo={{
-                      image: image,
-                      alt: `image thumbnail for artist ${name}`,
-                      width:
-                        image.childImageSharp
-                          .gatsbyImageData.width,
-                      height:
-                        image.childImageSharp
-                          .gatsbyImageData.height,
-                    }}
-                  />
-                </div>
-              ) : null}
-            <p>{location}</p>
-            <p>{description}</p>
-            {email && 
-              <p><a href={`mailto:${email}`}>{email}</a></p>
-            }
-            {/* {contact.telephone && 
-              <p>Tel: <a href={`tel:${contact.telephone}`}>{contact.telephone}</a></p>
-            }
-            {contact.telephone2 && 
-              <p>Tel: <a href={`tel:${contact.telephone2}`}>{contact.telephone2}</a></p>
-            } */}
-            <ul style={{ listStyle: 'none'}}>
-              <li>Accepts Commissions: {acceptsCommissions}</li>
-              <li>Media: {media}</li>
-              <li>Specialty: {specialty}</li>
-            </ul>
-            <PostContent content={content} />
-            {/* {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map((tag) => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
+      <div className="row">
+        <div className="col">
+          <h3>Gallery</h3>
+          {gallery?.map(g => (
+              g && <PreviewCompatibleImage
+              imageInfo={{
+                image: g,
+                alt: `image thumbnail for artist ${name}`,
+                width:
+                  g.childImageSharp
+                    .gatsbyImageData.width,
+                height:
+                  g.childImageSharp
+                    .gatsbyImageData.height,
+              }}
+            />
+          ))}
+        </div>
+        <div className="col">
+          <h2 className="title is-size-2 has-text-weight-bold is-bold-light">
+            {name}
+          </h2>
+
+          {image ? (
+              <div className="featured-thumbnail">
+                <PreviewCompatibleImage
+                  imageInfo={{
+                    image: image,
+                    alt: `image thumbnail for artist ${name}`,
+                    width:
+                      image.childImageSharp
+                        .gatsbyImageData.width,
+                    height:
+                      image.childImageSharp
+                        .gatsbyImageData.height,
+                  }}
+                />
               </div>
-            ) : null} */}
-          </div>
+            ) : null}
+          <p>{location}</p>
+          <p>{description}</p>
+          {email && 
+            <p><a href={`mailto:${email}`}>{email}</a></p>
+          }
+          {/* {contact.telephone && 
+            <p>Tel: <a href={`tel:${contact.telephone}`}>{contact.telephone}</a></p>
+          }
+          {contact.telephone2 && 
+            <p>Tel: <a href={`tel:${contact.telephone2}`}>{contact.telephone2}</a></p>
+          } */}
+          <ul style={{ listStyle: 'none'}}>
+            <li>Accepts Commissions: {acceptsCommissions}</li>
+            <li>Media: {media}</li>
+            <li>Specialty: {specialty}</li>
+          </ul>
+          <PostContent content={content} />
+          {/* {tags && tags.length ? (
+            <div style={{ marginTop: `4rem` }}>
+              <h4>Tags</h4>
+              <ul className="taglist">
+                {tags.map((tag) => (
+                  <li key={tag + `tag`}>
+                    <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null} */}
         </div>
       </div>
     </section>
@@ -108,6 +125,7 @@ const ArtistPost = ({ data }) => {
         media={post.frontmatter.media}
         specialty={post.frontmatter.specialty}
         image={post.frontmatter.artistimage}
+        gallery={post.frontmatter.galleryImages}
         name={post.frontmatter.name}
         location={post.frontmatter.location}
         helmet={
@@ -146,6 +164,16 @@ export const pageQuery = graphql`
         acceptsCommissions
         media
         specialty
+        galleryImages {
+          childImageSharp {
+            gatsbyImageData(
+              width: 120
+              quality: 100
+              layout: CONSTRAINED
+            )
+
+          }
+        }
         artistimage {
           childImageSharp {
             gatsbyImageData(
