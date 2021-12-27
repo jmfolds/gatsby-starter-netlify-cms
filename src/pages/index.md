@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Wichita Sculptors Guild
+title: Wichita Sculptors Guild, Inc
 image: /img/mom-baby.jpg
 heading: ...
 subheading: ...
