@@ -57,7 +57,10 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <div className="d-flex">
         <Navbar />
-        <div className="d-flex flex-grow-1">{children}</div>
+        <div className="d-flex flex-grow-1 flex-column">
+          <h1>{title}</h1>
+          {children}
+        </div>
       </div>
       <Footer />
     </>

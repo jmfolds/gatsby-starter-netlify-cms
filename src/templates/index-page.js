@@ -19,7 +19,6 @@ export const IndexPageTemplate = ({
   // description,
   // intro,
 }) => {
-  console.log(image);
   return (
     <div className="d-flex flex-grow-1">
       <section className="container">
