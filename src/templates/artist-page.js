@@ -30,15 +30,18 @@ export const ArtistPostTemplate = ({
     <section className="container-fluid">
       {helmet || ""}
       <div className="row">
-        <div className="col">
-          <h3>Gallery</h3>
-          <div className="row">
-          {gallery?.map(g => {
-              return(
-                g && <div key={g.childImageSharp.fluid.src} className="col-6"><img src={g.childImageSharp.fluid.src} /></div>
-            )})}
+        {gallery?.length ? (
+          <div className="col">
+            <h3>Gallery</h3>
+            <div className="row">
+            {gallery?.map(g => {
+                return(
+                  g && <div key={g.childImageSharp.fluid.src} className="col-6"><img src={g.childImageSharp.fluid.src} /></div>
+              )})}
+            </div>
           </div>
-        </div>
+        ) : null}
+
         <div className="col">
           <h2 className="title is-size-2 has-text-weight-bold is-bold-light">
             {name}

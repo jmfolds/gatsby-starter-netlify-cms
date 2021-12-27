@@ -1,8 +1,13 @@
+html,
 body {
   background-color: #000;
   color: #fff;
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+#___gatsby,
+#gatsby-focus-wrapper {
   height: 100%;
 }
 h1 {
