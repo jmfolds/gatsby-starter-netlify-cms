@@ -17,7 +17,7 @@ export const ArtistPostTemplate = ({
   acceptsCommissions,
   media,
   specialty,
-  // contact,
+  contact,
   email,
   // tags,
   location,
@@ -65,8 +65,9 @@ export const ArtistPostTemplate = ({
             ) : null}
           <p>{location}</p>
           <p>{description}</p>
+          <p>{contact}</p>
           {email && 
-            <p><a href={`mailto:${email}`}>{email}</a></p>
+            <p>Email: <a href={`mailto:${email}`}>{email}</a></p>
           }
           {/* {contact.telephone && 
             <p>Tel: <a href={`tel:${contact.telephone}`}>{contact.telephone}</a></p>
@@ -116,6 +117,7 @@ const ArtistPost = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         email={post.frontmatter.email}
+        contact={post.frontmatter.contact}
         acceptsCommissions={post.frontmatter.acceptsCommissions}
         media={post.frontmatter.media}
         specialty={post.frontmatter.specialty}
@@ -159,6 +161,7 @@ export const pageQuery = graphql`
         acceptsCommissions
         media
         specialty
+        contact
         galleryImages {
           childImageSharp {
             fluid(maxWidth: 400) {

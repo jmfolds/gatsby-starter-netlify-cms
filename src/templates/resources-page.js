@@ -5,31 +5,32 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const ResourcesPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
     <section className="container-fluid">
-      <h2 className="">
-        {title}
-      </h2>
-      <PageContent className="content" content={content} />
+        <h2 className="">
+          {title}
+        </h2>
+        <PageContent className="content" content={content} />
+        <a href="/admin">Admin</a>
     </section>
   );
 };
 
-AboutPageTemplate.propTypes = {
+ResourcesPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 };
 
-const AboutPage = ({ data }) => {
+const ResourcesPage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
     <Layout>
-      <AboutPageTemplate
+      <ResourcesPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
@@ -38,14 +39,14 @@ const AboutPage = ({ data }) => {
   );
 };
 
-AboutPage.propTypes = {
+ResourcesPage.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-export default AboutPage;
+export default ResourcesPage;
 
-export const aboutPageQuery = graphql`
-  query AboutPage($id: String!) {
+export const resourcesPageQuery = graphql`
+  query ResourcesPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

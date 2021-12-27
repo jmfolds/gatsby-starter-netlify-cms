@@ -48,6 +48,12 @@ collections:
         }
       - { label: "Email", name: "email", widget: "string", required: false }
       - {
+          label: "Contact",
+          name: "contact",
+          widget: "markdown",
+          required: false
+        }
+      - {
           label: "Artist Image",
           name: "artistimage",
           widget: image,
@@ -65,25 +71,25 @@ collections:
           required: false
         }
 
-  - name: "blog"
-    label: "Blog"
-    folder: "src/pages/blog"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "blog-post"
-        }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
-      - { label: "Featured Image", name: "featuredimage", widget: image }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Tags", name: "tags", widget: "list" }
+  # - name: "blog"
+  #   label: "Blog"
+  #   folder: "src/pages/blog"
+  #   create: true
+  #   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  #   fields:
+  #     - {
+  #         label: "Template Key",
+  #         name: "templateKey",
+  #         widget: "hidden",
+  #         default: "blog-post"
+  #       }
+  #     - { label: "Title", name: "title", widget: "string" }
+  #     - { label: "Publish Date", name: "date", widget: "datetime" }
+  #     - { label: "Description", name: "description", widget: "text" }
+  #     - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
+  #     - { label: "Featured Image", name: "featuredimage", widget: image }
+  #     - { label: "Body", name: "body", widget: "markdown" }
+  #     - { label: "Tags", name: "tags", widget: "list" }
 
   - name: "pages"
     label: "Pages"
@@ -100,19 +106,6 @@ collections:
             }
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: image, required: false }
-          - { label: Heading, name: heading, widget: string, required: false }
-          - {
-              label: Subheading,
-              name: subheading,
-              widget: string,
-              required: false
-            }
-          - {
-              label: Description,
-              name: description,
-              widget: string,
-              required: false
-            }
 
       - file: "src/pages/about/index.md"
         label: "About"
@@ -123,6 +116,19 @@ collections:
               name: "templateKey",
               widget: "hidden",
               default: "about-page"
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - file: "src/pages/resources/index.md"
+        label: "Resources"
+        name: "resources"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "resources-page"
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
