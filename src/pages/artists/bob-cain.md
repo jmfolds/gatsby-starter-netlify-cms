@@ -3,6 +3,7 @@ templateKey: artist-page
 name: Bob Cain
 location: Wichita, KS
 media: Wood, Stone, Clay, Bronze
+contact: "Tel: 123 456 7890"
 artistimage: /img/bob.jpg
 galleryImages:
   - /img/bob1.jpg
