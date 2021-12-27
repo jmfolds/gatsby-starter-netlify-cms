@@ -32,20 +32,12 @@ export const ArtistPostTemplate = ({
       <div className="row">
         <div className="col">
           <h3>Gallery</h3>
-          {gallery?.map(g => (
-              g && <PreviewCompatibleImage
-              imageInfo={{
-                image: g,
-                alt: `image thumbnail for artist ${name}`,
-                width:
-                  g.childImageSharp
-                    .gatsbyImageData.width,
-                height:
-                  g.childImageSharp
-                    .gatsbyImageData.height,
-              }}
-            />
-          ))}
+          <div className="row">
+          {gallery?.map(g => {
+              return(
+                g && <div key={g.childImageSharp.fluid.src} className="col-6"><img src={g.childImageSharp.fluid.src} /></div>
+            )})}
+          </div>
         </div>
         <div className="col">
           <h2 className="title is-size-2 has-text-weight-bold is-bold-light">
@@ -166,12 +158,9 @@ export const pageQuery = graphql`
         specialty
         galleryImages {
           childImageSharp {
-            gatsbyImageData(
-              width: 120
-              quality: 100
-              layout: CONSTRAINED
-            )
-
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
         artistimage {

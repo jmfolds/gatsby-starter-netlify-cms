@@ -83,11 +83,9 @@ export default function ArtistRoll() {
                   }
                   galleryImages {
                     childImageSharp {
-                      gatsbyImageData(
-                        width: 120
-                        quality: 100
-                        layout: CONSTRAINED
-                      )
+                      fluid(maxWidth: 750) {
+                        ...GatsbyImageSharpFluid
+                      }
                     }
                   }
                 }
