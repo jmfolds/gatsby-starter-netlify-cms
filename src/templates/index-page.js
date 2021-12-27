@@ -12,7 +12,7 @@ import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
   image,
-  title,
+  // title,
   // heading,
   // subheading,
   // mainpitch,
@@ -22,7 +22,6 @@ export const IndexPageTemplate = ({
   return (
     <div className="d-flex flex-grow-1">
       <section className="container">
-        <h1>{title}</h1>
         <PreviewCompatibleImage imageInfo={image} imageStyles={{ width: '345px', margin: '0 auto' }}/>
       </section>
     </div>
