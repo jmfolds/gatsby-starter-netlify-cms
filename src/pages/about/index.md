@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 path: /about
-title: About
+title: " "
 ---
 <div class="">
   <h4>Officers</h4>
