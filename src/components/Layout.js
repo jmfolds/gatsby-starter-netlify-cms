@@ -8,7 +8,7 @@ import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 
 const TemplateWrapper = ({ children }) => {
-  const { title, description } = useSiteMetadata();
+  const { title, description, configTitle } = useSiteMetadata();
   return (
     <>
       <Helmet>
@@ -58,7 +58,7 @@ const TemplateWrapper = ({ children }) => {
       <div className="d-flex">
         <Navbar />
         <div className="d-flex flex-grow-1 flex-column">
-          <h1>{title}</h1>
+          <h1>{configTitle || title}</h1>
           {children}
         </div>
       </div>
