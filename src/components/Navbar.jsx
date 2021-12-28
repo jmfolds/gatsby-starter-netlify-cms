@@ -2,13 +2,29 @@ import React from "react";
 import { Link, graphql, StaticQuery } from 'gatsby';
 import { Nav, NavDropdown } from 'react-bootstrap';
 import {useLocation} from '@reach/router';
+import useSiteMetadata from "./SiteMetadata";
+import PreviewCompatibleImage from "./PreviewCompatibleImage";
 
 function NavbarTemplate ({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
   const location = useLocation();
+  const { logo } = useSiteMetadata();
+  console.log(logo)
   return (
     <div className="d-flex flex-column">
-      <img src="/img/wsg-logo.jpg" />
+      {/* <img src="/img/wsg-logo.jpg" /> */}
+      <PreviewCompatibleImage
+        imageInfo={{
+          image: logo,
+          alt: `Wichita Sculptors Guild logo`,
+          width:
+            logo.childImageSharp
+              .gatsbyImageData.width,
+          height:
+            logo.childImageSharp
+              .gatsbyImageData.height,
+        }}
+      />
       <Nav defaultActiveKey="/home" className="flex-column">
         <Nav.Link active={location.pathname === '/'} as={Link} to="/">Home</Nav.Link>
         <Nav.Link active={location.pathname === '/about'} as={Link} to="/about">About</Nav.Link>

@@ -10,15 +10,20 @@ const useSiteMetadata = () => {
             description
           }
         }
-        markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+        markdownRemark(frontmatter: { templateKey: { eq: "layout-page" } }) {
           frontmatter {
-            title
+            title,
+            logo {
+              childImageSharp {
+                gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+              }
+            }
           }
         }
       }
     `
   )
-  return { ...site.siteMetadata, configTitle: markdownRemark.frontmatter.title }
+  return { ...markdownRemark.frontmatter , ...site.siteMetadata, configTitle: markdownRemark.frontmatter.title }
 }
 
 export default useSiteMetadata
