@@ -6,11 +6,11 @@ media: Wood, Stone, Clay, Bronze
 contact: "Tel: 123 456 7890"
 artistimage: /img/bob.jpg
 galleryImages:
-  - /img/bob1.jpg
   - /img/bob2.jpg
   - /img/bob3.jpg
   - /img/bob4.jpg
   - /img/bob5.jpg
+  - /img/bob1.jpg
 tags:
   - wood
   - stone
