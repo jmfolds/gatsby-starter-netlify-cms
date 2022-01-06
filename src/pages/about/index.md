@@ -8,8 +8,8 @@ title: " "
   <ul>
     <li><a href="mailto:jkfolds@swbell.net">President, Joel Folds</a></li>
     <li><a href="mailto:sculptiowa@gmail.com">Vice President, Mary Francis Skinner</a></li>
-    <li><a href="mailto:plovchik@yahoo.com">Treasurer, Phil Lovchik</a></li>
-    <li><a href="mailto:apstands@yahoo.com">Secretary, Andy Patton</a></li>
+    <li><a href="mailto:jkfolds@swbell.net">Treasurer, TBA</a></li>
+    <li><a href="mailto:jsteed109@yahoo.com">Secretary, Julie Steed</a></li>
   </ul>
   <h4>Membership Requirements</h4>
   <p>
@@ -58,6 +58,7 @@ An Exhibiting Member must: 1) have membership dues current, 2) attend a minimum 
 Section 11:
 
 Exhibiting Members are eligible for inclusion on the guild's web site and to participate in guild sponsored exhibits. 
+
   </p>
   <h4>Membership Application</h4>
   <a download href="/">Download</a>
