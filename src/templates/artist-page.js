@@ -36,7 +36,11 @@ export const ArtistPostTemplate = ({
             <div className="row">
             {gallery?.map(g => {
                 return(
-                  g && <div key={g.childImageSharp.fluid.src} className="col-6"><img src={g.childImageSharp.fluid.src} /></div>
+                  g && (
+                  <div key={g.childImageSharp.fluid.src} className="col-6 d-flex align-items-center justify-content-center mb-3">
+                    <img className="img-fluid" src={g.childImageSharp.fluid.src} />
+                  </div>
+                  )
               )})}
             </div>
           </div>
