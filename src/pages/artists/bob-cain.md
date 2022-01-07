@@ -3,7 +3,7 @@ templateKey: artist-page
 name: Bob Cain
 location: Wichita, KS
 media: Wood, Stone, Clay, Bronze
-contact: "Tel: 123 456 7890"
+contact: ""
 artistimage: /img/bob.jpg
 galleryImages:
   - /img/bob2.jpg
@@ -18,7 +18,7 @@ tags:
   - bronze
 acceptsCommissions: Sometimes
 specialty: Woodcarving
-email: bob@bob.com
+email: ""
 description: >
   Bob has been an artist from child hood starting with drawings of comic book
   characters. He took all of the Art Classes he could in his public school days.
