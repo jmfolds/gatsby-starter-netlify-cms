@@ -29,31 +29,29 @@ description: >-
   beauty to the world. Art heals the soul and renews the spirit. All things seem
   possible, for we are all kindred spirits.
 
-   Public pieces on display: - Bronze Eagle District 266 Maize, Ks. Memorial for Gene Pollman.
 
-  \- Bronze Camel /baby Sedgwick County Zoo for Envision 
+  <ul>
 
+    <li> Public pieces on display: - Bronze Eagle District 266 Maize, Ks. Memorial for Gene Pollman.</li>
 
-  \- Bronze Tapir/baby Sedgwick County Zoo for Envision. 
+    <li>- Bronze Camel /baby Sedgwick County Zoo for Envision </li>
 
+    <li>- Bronze Tapir/baby Sedgwick County Zoo for Envision. </li>
 
-  \- Bronze Life size child /eagle CHSM Dist. 266 Maize, Ks. Memorial for John Frazee. 
+    <li>- Bronze Life size child /eagle CHSM Dist. 266 Maize, Ks. Memorial for John Frazee. </li>
 
+    <li>- Bronze Child Mulvane Methodist Church. Memorial Jim Garms. - Bronze Child Goddard, Ks. Library </li>
 
-  \- Bronze Child Mulvane Methodist Church. Memorial Jim Garms. - Bronze Child Goddard, Ks. Library 
+    <li>- Children's Reading Corner</li>
 
+    <li>- Bronze Pioneer and Child Cobb's Park. Mulvane, Kansas</li> 
 
-  \- Children's Reading Corner
+    <li>- Bronze Eagle Altersgate Methodist Church. Wichita, Ks </li>
 
+    <li>- Clay pieces on display in Halstead, Ks. 
 
-  \- Bronze Pioneer and Child Cobb's Park. Mulvane, Kansas 
-
-
-  \- Bronze Eagle Altersgate Methodist Church. Wichita, Ks 
-
-
-  \- Clay pieces on display in Halstead, Ks. 
+  (Library, Rehab Center)</li>
 
 
-  (Library, Rehab Center)
+  </ul>
 ---
