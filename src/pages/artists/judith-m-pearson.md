@@ -12,10 +12,10 @@ galleryImages:
   - /img/judith1.jpg
   - /img/judith2.jpg
   - /img/judith3.jpg
-  - /img/judith3.jpg
   - /img/judith5.jpg
   - /img/judith6.jpg
   - /img/judith7.jpg
+  - /img/judith4.jpg
 description: >-
   
 
