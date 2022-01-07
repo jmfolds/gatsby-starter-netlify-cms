@@ -7,9 +7,8 @@ import Content, { HTMLContent } from "../components/Content";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import { ListGroup } from "react-bootstrap";
 
-// eslint-disable-next-line
 export const ArtistPostTemplate = ({
-  content,
+  // content,
   contentComponent,
   image,
   gallery,
@@ -77,24 +76,30 @@ export const ArtistPostTemplate = ({
             </div>
           </div>
           <div className="row">
-            <div className="col-6 my-3">
-              <ListGroup style={{ padding: 0, listStyle: 'none'}}>
-                <ListGroup.Item><strong>Accepts Commissions:</strong> {acceptsCommissions}</ListGroup.Item>
-                <ListGroup.Item><strong>Media:</strong> {media}</ListGroup.Item>
-                <ListGroup.Item><strong>Specialty:</strong> {specialty}</ListGroup.Item>
-              </ListGroup>
+            <div className="col my-3">
+              <div className="d-flex">
+                <ListGroup style={{ padding: 0, listStyle: 'none'}}>
+                  {acceptsCommissions && <ListGroup.Item className="bg-dark text-white"><strong>Accepts Commissions:</strong> {acceptsCommissions}</ListGroup.Item>}
+                  { media && <ListGroup.Item className="bg-dark text-white"><strong>Media:</strong> {media}</ListGroup.Item>}
+                  {specialty && <ListGroup.Item className="bg-dark text-white"><strong>Specialty:</strong> {specialty}</ListGroup.Item>}
+                </ListGroup>
+              </div>
             </div>
           </div>
-          <p>{description}</p>
-          <div>
-            <h4>Contact</h4>
-            <p>{contact}</p>
-            {email && 
-              <p>Email: <a href={`mailto:${email}`}>{email}</a></p>
-            }
-          </div>
+          <p><PostContent content={description} /></p>
+          {contact || email && (
+            <div>
+              <h4>Contact</h4>
+              <p>
+                {email && 
+                  <p>Email: <a href={`mailto:${email}`}>{email}</a></p>
+                }
+                <PostContent content={contact} />
+              </p>
 
-          <PostContent content={content} />
+            </div>
+          )}
+
           {/* {tags && tags.length ? (
             <div style={{ marginTop: `4rem` }}>
               <h4>Tags</h4>
@@ -127,7 +132,7 @@ const ArtistPost = ({ data }) => {
   return (
     <Layout>
       <ArtistPostTemplate
-        content={post.html}
+        // content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         email={post.frontmatter.email}
@@ -148,7 +153,7 @@ const ArtistPost = ({ data }) => {
             />
           </Helmet>
         }
-        tags={post.frontmatter.tags}
+        // tags={post.frontmatter.tags}
       />
     </Layout>
   );
