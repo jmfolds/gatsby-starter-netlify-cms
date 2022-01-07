@@ -18,7 +18,7 @@ tags:
   - bronze
 acceptsCommissions: Sometimes
 specialty: Woodcarving
-email: ""
+email: xsailer@cox.net
 description: >
   Bob has been an artist from child hood starting with drawings of comic book
   characters. He took all of the Art Classes he could in his public school days.
