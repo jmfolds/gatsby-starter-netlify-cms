@@ -2,7 +2,7 @@
 templateKey: artist-page
 name: Bob Cain
 location: Wichita, KS
-media: Wood, Stone, Clay, Bronze
+media: Wood, Stone, Clay, Bronze, Oil Painting
 contact: ""
 artistimage: /img/bob.jpg
 galleryImages:
