@@ -5,7 +5,13 @@ location: Wichita, KS
 acceptsCommissions: Yes
 media: Terra-cotta, Bronze
 specialty: Bas Relief, Figures, Abstracts
-artistimage: /img/4565437566.jpg
+artistimage: /img/tulia.jpg
+galleryImages:
+  - /img/tulia1.jpg
+  - /img/tulia2.jpg
+  - /img/tulia3.jpg
+  - /img/tulia4.jpg
+  - /img/tulia5.jpg
 description: >-
   Although primarily self-taught, I have spent many hours of study with
   well-known artists and continually strive to develop my own talent and skill
