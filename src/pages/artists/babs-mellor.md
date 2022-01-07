@@ -12,7 +12,7 @@ galleryImages:
   - /img/babs3.jpg
   - /img/babs4.jpg
   - /img/babs5.jpg
-description: "<!--StartFragment-->
+description: "
 
 
   Babs Mellor is a professional sculptor gifted with a love of hard work,
@@ -20,8 +20,5 @@ description: "<!--StartFragment-->
   Babs has studied with the best sculptors in America and abroad. Her classes
   are invariably filled to capacity with students, who find her creativity and
   sense of adventure infectious. Classical art is stressed. She has created many
-  large bronze statues for cities and for private individuals.
-
-
-  <!--EndFragment-->"
+  large bronze statues for cities and for private individuals."
 ---
