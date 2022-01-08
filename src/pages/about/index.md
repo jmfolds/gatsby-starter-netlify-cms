@@ -21,11 +21,11 @@ There shall be two types of memberships: 1) the Artist Sculptor and 2) Friends o
 
 Section 2:
 
-Any person who is interested in sculptural art shall be eligible for membership upon submitting an application to the secretary or treasurer.
+Any person who is interested in sculptural art shall be eligible for membership upon submitting an application to the secretary or treasurer or president or vice president.
 
 Section 3:
 
-Membership shall not be effective until the treasurer has received the year's dues. Upon payment of the annual dues, each member will receive a membership card showing that they are in good standing with the guild.
+Membership shall not be effective until the treasurer has received the year's dues. 
 
 Section 4:
 
