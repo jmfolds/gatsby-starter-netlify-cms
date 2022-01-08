@@ -60,10 +60,7 @@ Tom Banwell Designs offers custom resin casting in both urethane and polyester u
 
  
 
-<h5>The Woodcraft Shop</h5>
 
-
-Serving the needs of the traditional and contemporary carver. The Woodcraft Shop of Bettendorf, Iowa
 
 <hr /> 
 
