@@ -2,7 +2,7 @@
 templateKey: artist-page
 name: Debra Salts
 location: Wichita, KS
-acceptsCommissions: No
+acceptsCommissions: ""
 media: Stone
 specialty: Abstract
 artistimage: /img/debra.jpg
