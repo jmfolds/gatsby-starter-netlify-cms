@@ -5,7 +5,12 @@ location: Halstead, KS
 acceptsCommissions: Yes
 media: Stone, Copper, Bronze, Wood, Steel
 specialty: Figurative, Emotional, Mixed-Media, Humanitarian, Religious
-contact: ' <td><a href="https://artopens.org/">Springdale Art & nature Center</a></td>'
+contact: |-2
+   <tr>
+
+   <td><a href="https://artopens.org/">Springdale Art & nature Center</a></td>
+
+   </tr>
 artistimage: /img/piglet.jpg
 galleryImages:
   - /img/piglet.1.jpg
