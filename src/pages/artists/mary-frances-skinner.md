@@ -5,6 +5,7 @@ location: Wichita, KS
 acceptsCommissions: Yes
 media: clay, bronze
 specialty: Sacred, figurative
+email: sculptiowa@gmail.com
 contact: >-2
    <tr>  
    <td><a href="https://https://sculptiowa.wixsite.com/bliss">Sculpt Iowa</a></td>
