@@ -5,6 +5,8 @@ location: Wichita, KS
 acceptsCommissions: Yes
 media: clay, bronze
 specialty: Sacred, figurative
+contact: '    <td><a href="https://https://sculptiowa.wixsite.com/bliss">Sculpt
+  Iowa</a></td>'
 artistimage: /img/mary.jpg
 galleryImages:
   - /img/mary1.jpg
