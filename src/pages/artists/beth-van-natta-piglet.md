@@ -5,6 +5,7 @@ location: Halstead, KS
 acceptsCommissions: Yes
 media: Stone, Copper, Bronze, Wood, Steel
 specialty: Figurative, Emotional, Mixed-Media, Humanitarian, Religious
+contact: https://artopens.org/
 artistimage: /img/piglet.jpg
 galleryImages:
   - /img/piglet.1.jpg
