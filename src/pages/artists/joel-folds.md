@@ -3,7 +3,15 @@ templateKey: artist-page
 name: Joel Folds
 media: Limestone, water based clay
 email: jkfoldsy@swbell.net
-contact: 316-204-1782
+contact: >-
+  316-204-1782
+
+
+
+   <tr>  
+   <td><a href="https://https://sculptiowa.wixsite.com/bliss">Sculpt Iowa</a></td>
+
+   </tr>
 artistimage: /img/joel.jpg
 galleryImages:
   - /img/joel1.jpg
