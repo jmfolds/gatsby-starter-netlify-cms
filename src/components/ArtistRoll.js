@@ -9,34 +9,32 @@ class ArtistRollTemplate extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="columns is-multiline">
+      <div className="row">
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="is-parent column is-6" key={post.id}>
-              <article>
+            <div className="col-3" style={{ }} key={post.id}>
+              <Link className="button" to={post.fields.slug}>
                 <header>
-                  {post.frontmatter.artistimage ? (
-                    <div className="featured-thumbnail">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.artistimage,
-                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                          width:
-                            post.frontmatter.artistimage.childImageSharp
-                              .gatsbyImageData.width,
-                          height:
-                            post.frontmatter.artistimage.childImageSharp
-                              .gatsbyImageData.height,
-                        }}
-                      />
-                    </div>
-                  ) : null}
-               
-                </header>
-                  <Link className="button" to={post.fields.slug}>
-                      {post.frontmatter.name}
-                  </Link>
-              </article>
+                {post.frontmatter.artistimage ? (
+                  <div className="featured-thumbnail">
+                    <PreviewCompatibleImage
+                      imageInfo={{
+                        image: post.frontmatter.artistimage,
+                        alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                        width:
+                          post.frontmatter.artistimage.childImageSharp
+                            .gatsbyImageData.width,
+                        height:
+                          post.frontmatter.artistimage.childImageSharp
+                            .gatsbyImageData.height,
+                      }}
+                    />
+                  </div>
+                ) : null}
+              
+              </header>
+                {post.frontmatter.name}
+              </Link>
             </div>
           ))}
       </div>

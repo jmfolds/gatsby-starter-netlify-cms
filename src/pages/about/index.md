@@ -3,6 +3,7 @@ templateKey: about-page
 path: /about
 title: " "
 ---
+
 <div class="">
   <h4>Officers</h4>
   <ul>
@@ -25,7 +26,7 @@ Any person who is interested in sculptural art shall be eligible for membership 
 
 Section 3:
 
-Membership shall not be effective until the treasurer has received the year's dues. 
+Membership shall not be effective until the treasurer has received the year's dues.
 
 Section 4:
 
@@ -43,10 +44,8 @@ Section 7:
 
 All members shall be entitled to vote at all annual or special meetings.
 
-
-
   </p>
   <h4>Membership Application</h4>
   <a download href="/">Download</a>
-
+  <a download href="static/img/application.pdf">Download</a>
 </div>
