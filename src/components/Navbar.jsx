@@ -14,6 +14,7 @@ function NavbarTemplate ({ data }) {
     <div className="d-flex flex-column">
       {/* <img src="/img/wsg-logo.jpg" /> */}
       <PreviewCompatibleImage
+        imageStyles={{ margin: '0.75rem' }}
         imageInfo={{
           image: logo,
           alt: `Wichita Sculptors Guild logo`,
