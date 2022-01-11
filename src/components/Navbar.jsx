@@ -34,10 +34,8 @@ function NavbarTemplate ({ data }) {
         {posts &&
               posts.map(({ node: post }) => {
                 return (
-                  <NavDropdown.Item key={post.frontmatter.name} eventKey={post.frontmatter.name}>
-                    <Link to={post.fields.slug}>
+                  <NavDropdown.Item as={Link} to={post.fields.slug} key={post.frontmatter.name} eventKey={post.frontmatter.name}>
                       {post.frontmatter.name}
-                    </Link>
                   </NavDropdown.Item>)
               })
             }
