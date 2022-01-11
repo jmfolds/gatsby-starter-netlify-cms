@@ -46,6 +46,5 @@ All members shall be entitled to vote at all annual or special meetings.
 
   </p>
   <h4>Membership Application</h4>
-  <a download href="/">Download</a>
-  <a download href="static/img/application.pdf">Download</a>
+  <a download href="/img/application.pdf">Download</a>
 </div>
