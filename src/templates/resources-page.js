@@ -14,7 +14,6 @@ export const ResourcesPageTemplate = ({ title, content, contentComponent }) => {
           {title}
         </h2>
         <PageContent className="content" content={content} />
-        <a href="/admin">Admin</a>
     </section>
   );
 };
