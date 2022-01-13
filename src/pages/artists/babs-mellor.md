@@ -12,6 +12,13 @@ galleryImages:
   - /img/babs3.jpg
   - /img/babs4.jpg
   - /img/babs5.jpg
+  - /img/babs6.jpg
+  - /img/babs7.jpg
+  - /img/babs8.jpg
+  - /img/babs9.jpg
+  - /img/babs10.jpg
+  - /img/babs11.jpg
+  - /img/babs12.jpg
 description: "
 
 
