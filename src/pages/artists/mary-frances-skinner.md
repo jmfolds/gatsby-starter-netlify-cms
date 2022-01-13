@@ -28,6 +28,7 @@ description: >-
   incarnation, love, and God. In this way, my work becomes a prayer.”
 
 
+  <br>
 
    <tr>  
    <td><a href="https://https://sculptiowa.wixsite.com/bliss">Sculpt Iowa</a></td>
