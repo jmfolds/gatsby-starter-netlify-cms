@@ -14,11 +14,21 @@ galleryImages:
   - /img/piglet.4.jpg
   - /img/piglet.5.jpg
 description: >-
-  
+  For 28 years I taught art. Now retired, I study and do art. Sculpture is my
+  soul, my sustinance, my reason to exist. I sculpt the human being, the human
+  emotion, the struggle and the pain. My work is often sad, even heart rending,
+  as is life. In varied materials, often in mixed media, I portray mankind's
+  journey through life and death.
 
-  For 28 years I taught art. Now retired, I study and do art. Sculpture is my soul, my sustinance, my reason to exist. I sculpt the human being, the human emotion, the struggle and the pain. My work is often sad, even heart rending, as is life. In varied materials, often in mixed media, I portray mankind's journey through life and death.
+   <!--StartFragment-->
 
-   <tr>
+  <br>
+
+
+  <!--EndFragment-->
+
+
+  <tr>
 
    <td><a href="https://artopens.org/">Springdale Art & nature Center</a></td>
 
