@@ -3,7 +3,7 @@ templateKey: artist-page
 name: Angie Wormhoudt
 acceptsCommissions: Yes
 media: Bronze and Terra-Cotta
-specialty: igurative, Adults, Children, Indians, Animals and any special subject.
+specialty: Figurative, Adults, Children, Indians, Animals and any special subject.
 artistimage: /img/img_2439.jpg
 galleryImages:
   - /img/img_2368.jpg
