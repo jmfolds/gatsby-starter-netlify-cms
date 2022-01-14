@@ -28,7 +28,7 @@ description: >-
   <br>
 
    <tr>  
-   <td><a href="https://https://sculptiowa.wixsite.com/bliss">Sculpt Iowa</a></td>
+   <td><a href="https://https://sculptiowa.wixsite.com/bliss">https://https://sculptiowa.wixsite.com/bliss</a></td>
 
    </tr>
 ---
