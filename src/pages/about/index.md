@@ -6,11 +6,15 @@ title: " "
 <div class="">
   <h4>Officers</h4>
   <ul>
+
+<p style="color:red;">
     <li><a href="mailto:jkfolds@swbell.net">President, Joel Folds</a></li>
     <li><a href="mailto:sculptiowa@gmail.com">Vice President, Mary Frances Skinner</a></li>
     <li><a href="mailto:jkfolds@swbell.net">Treasurer, TBA</a></li>
     <li><a href="mailto:jsteed109@yahoo.com">Secretary, Julie Steed</a></li>
-  </ul>
+  </p>
+
+</ul>
   <h4>Membership Requirements</h4>
   <p>
 From Bylaws, Article II: Membership
