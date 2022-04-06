@@ -10,7 +10,7 @@ title: " "
 <p style="color:red;">
     <li><a href="mailto:jkfolds@swbell.net">President, Joel Folds</a></li>
     <li><a href="mailto:sculptiowa@gmail.com">Vice President, Mary Frances Skinner</a></li>
-    <li><a href="mailto:jkfolds@swbell.net">Treasurer, TBA</a></li>
+    <li><a href="mailto:jkfolds@swbell.net">Treasurer, Kathy Siemon 11806 W. Hickory ln. Wichita, Ks 67212</a></li>
     <li><a href="mailto:jsteed109@yahoo.com">Secretary, Julie Steed</a></li>
   </p>
 
