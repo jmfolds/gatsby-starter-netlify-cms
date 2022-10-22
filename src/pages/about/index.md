@@ -25,7 +25,7 @@ There shall be two types of memberships: 1) the Artist Sculptor and 2) Friends o
 
 Section 2:
 
-Any person who is interested in sculptural art shall be eligible for membership upon submitting an application to the secretary or treasurer or president or vice president.
+Any person who is interested in sculptural art shall be eligible for membership upon asking the secretary or treasurer or president or vice president.
 
 Section 3:
 
@@ -48,6 +48,5 @@ Section 7:
 All members shall be entitled to vote at all annual or special meetings.
 
   </p>
-  <h4>Membership Application</h4>
-  <a download href="bylawsb.doc">Download</a>
+
 </div>
