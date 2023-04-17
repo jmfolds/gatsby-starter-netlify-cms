@@ -6,9 +6,7 @@ email: jkfoldsy@swbell.net
 contact: |-
   316-204-1782
 
-  <br />
-
-  jkfoldsy@swbell.net
+  [jkfoldsy@swbell.net](mailto:jkfolds@swbell.net)
 artistimage: /img/joel.jpg
 galleryImages:
   - /img/joel1.jpg
