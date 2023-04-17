@@ -87,7 +87,7 @@ export const ArtistPostTemplate = ({
             </div>
           </div>
           <p><PostContent content={description} /></p>
-          {contact || email && (
+          {(contact || email) ? (
             <div>
               <h4>Contact</h4>
               <p>
@@ -98,7 +98,7 @@ export const ArtistPostTemplate = ({
               </p>
 
             </div>
-          )}
+          ) : null}
 
           {/* {tags && tags.length ? (
             <div style={{ marginTop: `4rem` }}>
