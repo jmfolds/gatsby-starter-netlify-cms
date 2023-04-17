@@ -3,10 +3,7 @@ templateKey: artist-page
 name: Joel Folds
 media: Limestone, water based clay
 email: jkfoldsy@swbell.net
-contact: |-
-  316-204-1782
-
-  [jkfoldsy@swbell.net](mailto:jkfolds@swbell.net)
+contact: 316-204-1782
 artistimage: /img/joel.jpg
 galleryImages:
   - /img/joel1.jpg
